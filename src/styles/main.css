@@ -39,3 +39,53 @@
     padding-top: 70px; /* Height of the navbar */
   }
   
+  .timeline {
+    position: relative;
+    padding-left: 30px;
+    list-style: none;
+  }
+  
+  .timeline::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    background: #ddd;
+  }
+  
+  .timeline-item {
+    position: relative;
+    margin-bottom: 20px;
+  }
+  
+  .timeline-dot {
+    position: absolute;
+    left: 8px;
+    top: 8px; /* Adjust this value as needed */
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: #007bff;
+    z-index: 1;
+  }
+  
+  .timeline-date {
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .timeline-content {
+    margin-left: 20px; /* Give some space for the dot */
+  }
+  
+  .timeline-content h3 {
+    margin-top: 0;
+    font-size: 1.25rem;
+  }
+  
+  .timeline-content p {
+    margin-bottom: 0;
+  }
+  
