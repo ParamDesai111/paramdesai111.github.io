@@ -1,5 +1,4 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import HomeSection from './components/HomeSection';
 import AboutSection from './components/AboutSection';
@@ -8,15 +7,13 @@ import ProjectsSection from './components/ProjectsSection';
 
 function App() {
   return (
-    <Router>
+    <div>
       <Navbar />
-      <Switch>
-        <Route path="/" exact component={HomeSection} />
-        <Route path="/about" component={AboutSection} />
-        <Route path="/experience" component={ExperienceSection} />
-        <Route path="/projects" component={ProjectsSection} />
-      </Switch>
-    </Router>
+      <div id="home" className="section"><HomeSection /></div>
+      <div id="about" className="section"><AboutSection /></div>
+      <div id="experience" className="section"><ExperienceSection /></div>
+      <div id="projects" className="section"><ProjectsSection /></div>
+    </div>
   );
 }
 

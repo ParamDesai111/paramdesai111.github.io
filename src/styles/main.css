@@ -1,12 +1,41 @@
-/* main.css */
-body {
+  
+  body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
     background-color: #f8f9fa; /* Light background */
     color: #333; /* Dark text */
-}
+    scroll-behavior: smooth;
 
-/* Custom styles for your sections */
-section {
-    padding: 20px 0;
-}
-
-/* Additional custom styles here */
+  }
+  
+  .section {
+    min-height: 100vh; /* Make each section fill the viewport */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Center content vertically and horizontally */
+  }
+  
+  /* Add custom styles for each section to differentiate them */
+  #home {
+    background: #f8f9fa;
+  }
+  
+  #about {
+    background: #e9ecef;
+  }
+  
+  #experience {
+    background: #dee2e6;
+  }
+  
+  #projects {
+    background: #ced4da;
+  }
+  
+  /* Adjust padding for the first section to account for the fixed navbar */
+  #home {
+    padding-top: 70px; /* Height of the navbar */
+  }
+  
