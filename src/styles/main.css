@@ -34,7 +34,6 @@
     background: #ced4da;
   }
   
-  /* Adjust padding for the first section to account for the fixed navbar */
   #home {
     padding-top: 70px; /* Height of the navbar */
   }
@@ -51,8 +50,8 @@
     left: 0;
     top: 0;
     bottom: 0;
-    width: 4px;
-    background: #ddd;
+    width: 2.5px;
+    background: #000000;
   }
   
   .timeline-item {
@@ -62,8 +61,8 @@
   
   .timeline-dot {
     position: absolute;
-    left: 8px;
-    top: 8px; /* Adjust this value as needed */
+    left: -36.5px;
+    top: 7px;
     width: 16px;
     height: 16px;
     border-radius: 50%;
@@ -71,13 +70,26 @@
     z-index: 1;
   }
   
-  .timeline-date {
+  /* .timeline-date {
     margin-bottom: 5px;
     font-weight: bold;
+  } */
+  .timeline-date {
+    display: inline-block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    background-color: #2a2cc8; /* Adjust the color to match your design */
+    color: white; /* Text color */
+    padding: 8px 16px; /* Adjust padding to your preference */
+    border-radius: 20px; /* Gives the rounded corners */
+    font-size: 1rem; /* Adjust font-size as needed */
+    /* Additional properties for better appearance */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow */
   }
   
+  
   .timeline-content {
-    margin-left: 20px; /* Give some space for the dot */
+    margin-left: 10px; /* Give some space for the dot */
   }
   
   .timeline-content h3 {
