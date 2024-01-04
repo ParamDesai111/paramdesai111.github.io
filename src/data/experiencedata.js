@@ -12,7 +12,8 @@ const experienceData = [
         PowerShell was utilized to troubleshoot and resolve system-level 
         issues in applications hosted on Azure, as well as to develop robust 
         scripts for automating tasks, thereby streamlining system processes 
-        and enhancing efficiency within the Azure environment.`
+        and enhancing efficiency within the Azure environment.`,
+        logo: 'https://seeklogo.com/images/A/avanade-logo-60078FCF19-seeklogo.com.png'
     }
     // Add more experiences here
 ];

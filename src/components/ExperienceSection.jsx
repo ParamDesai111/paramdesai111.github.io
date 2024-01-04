@@ -15,6 +15,9 @@ function ExperienceSection() {
               <h4>{item.company}</h4>
               <p>{item.description}</p>
             </div>
+            <div className="timeline-logo">
+              <img src={item.logo} alt="Company Logo" />
+            </div>
           </div>
         ))}
       </div>

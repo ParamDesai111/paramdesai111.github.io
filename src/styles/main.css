@@ -53,7 +53,7 @@
     width: 2.5px;
     background: #000000;
   }
-  
+/*   
   .timeline-item {
     position: relative;
     margin-bottom: 20px;
@@ -68,6 +68,28 @@
     border-radius: 50%;
     background: #007bff;
     z-index: 1;
+  } */
+  .timeline-item {
+    position: relative;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center; /* Align the dot, content, and logo vertically */
+  }
+  
+  .timeline-dot {
+    position: absolute; /* Adjusted from absolute to relative */
+    left: -36.5px;
+    top: 7px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: #007bff;
+    z-index: 1;
+    flex-shrink: 0; /* Prevent the dot from shrinking */
+  }
+  
+  .timeline-content {
+    flex-grow: 1; /* Allow content to fill the space */
   }
   
   /* .timeline-date {
@@ -87,10 +109,20 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow */
   }
   
-  
-  .timeline-content {
-    margin-left: 10px; /* Give some space for the dot */
+  .timeline-logo {
+    margin-left: auto; /* Push the logo to the right */
+    padding-left: 20px; /* Space between content and logo */
   }
+  
+  .timeline-logo img {
+    display: block; /* Remove inline-block alignments */
+    max-width: 150px; /* Set a maximum width for the logo */
+    height: auto; /* Maintain aspect ratio */
+  }
+
+  /* .timeline-content {
+    margin-left: 10px; Give some space for the dot
+  } */
   
   .timeline-content h3 {
     margin-top: 0;
@@ -101,3 +133,9 @@
     margin-bottom: 0;
   }
   
+  .navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-left: 30px;
+  }
