@@ -11,9 +11,12 @@ function ExperienceSection() {
             <div className="timeline-dot"></div>
             <div className="timeline-content">
               <div className="timeline-date">{item.date}</div>
-              <h3>{item.title}</h3>
-              <h4>{item.company}</h4>
-              <p>{item.description}</p>
+              <div className="timeline-title">{item.title}</div>
+              {/* <h3>{item.title}</h3> */}
+              <div className = "timeline-company">{item.company}</div>
+              {/* <h4>{item.company}</h4> */}
+              <div className = "timeline-description">{item.description}</div>
+              {/* <p>{item.description}</p> */}
             </div>
             <div className="timeline-logo">
               <img src={item.logo} alt="Company Logo" />

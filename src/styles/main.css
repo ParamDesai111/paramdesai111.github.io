@@ -83,14 +83,29 @@
     width: 16px;
     height: 16px;
     border-radius: 50%;
-    background: #007bff;
+    background: #ef4914;
     z-index: 1;
     flex-shrink: 0; /* Prevent the dot from shrinking */
+  }
+
+  .timeline-title {
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 1.25rem;
+    color: black; /* Adjust the color to match your design */
+  }
+
+  .timeline-company {
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #ef4914; /* Adjust the color to match your design */
   }
   
   .timeline-content {
     flex-grow: 1; /* Allow content to fill the space */
   }
+
   
   /* .timeline-date {
     margin-bottom: 5px;
@@ -100,7 +115,7 @@
     display: inline-block;
     margin-bottom: 5px;
     font-weight: bold;
-    background-color: #2a2cc8; /* Adjust the color to match your design */
+    background-color: #ef4914; /* Adjust the color to match your design */
     color: white; /* Text color */
     padding: 8px 16px; /* Adjust padding to your preference */
     border-radius: 20px; /* Gives the rounded corners */
