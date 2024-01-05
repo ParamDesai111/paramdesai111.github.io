@@ -153,50 +153,58 @@
     color: #333;
     margin-left: 30px;
   }
-
   
+  /* Style for the project cards */
   .project-card {
-    background-color: #333; /* Dark background color */
-    color: #fff; /* White text color */
-    border: none; /* Remove border */
+    background-color: #333; /* Dark background for the card */
+    color: #fff;
+    border: none;
     transition: transform 0.3s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: adds some depth */
   }
   
   .project-card:hover {
-    transform: translateY(-10px); /* Slight move up */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Shadow for depth */
+    transform: translateY(-5px); /* Slight move up on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
   }
   
+  /* Style for the tech stack */
   .tech-stack {
     margin-bottom: 10px;
+    color: #aaa; /* Lighter text color for tech stack */
+    font-size: 0.9rem; /* Smaller font size for tech stack */
   }
   
+  /* Style for the project links */
   .project-links {
     display: flex;
-    justify-content: flex-end;
+    justify-content: start; /* Align icons to the start of the container */
   }
   
+  /* Style for the project buttons */
   .project-btn {
-    margin-left: 10px;
     color: #fff; /* White icon color */
-    font-size: 1.5rem; /* Larger icons */
+    margin-right: 10px; /* Space between icons */
+    font-size: 1.5rem; /* Size of icons */
+    transition: color 0.3s ease-in-out;
   }
   
   .project-btn:hover {
-    color: #1e90ff; /* Highlight color on hover */
-  }
-  
-  /* Add custom styles for icon buttons */
-  .project-btn {
     background: transparent;
     border: none;
     cursor: pointer;
     transition: color 0.3s ease;
   }
   
-  /* Ensure icons are properly aligned */
-  .fa-github,
-  .fa-link {
-    margin-right: 5px;
+  /* Style for the title of each project */
+  .card-title {
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Adjustments for smaller screens */
+  @media (max-width: 767px) {
+    .project-links {
+      justify-content: center; /* Center icons on smaller screens */
+    }
   }
   
