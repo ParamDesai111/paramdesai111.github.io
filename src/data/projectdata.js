@@ -11,7 +11,8 @@ const projectData = [
         id: 2,
         title: "Sudoku Solver",
         tech: "Python pandas numpy TensorFlow Jupyter",
-        github_url: "https://github.com/ParamDesai111/Sudoku-Solver"
+        github_url: "https://github.com/ParamDesai111/Sudoku-Solver",
+
     },
     {
         id: 3,

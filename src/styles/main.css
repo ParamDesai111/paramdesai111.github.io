@@ -154,14 +154,7 @@
     margin-left: 30px;
   }
   
-  /* Style for the project cards */
-  .project-card {
-    background-color: #333; /* Dark background for the card */
-    color: #fff;
-    border: none;
-    transition: transform 0.3s ease-in-out;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: adds some depth */
-  }
+  
   
   .project-card:hover {
     transform: translateY(-5px); /* Slight move up on hover */
@@ -195,7 +188,7 @@
     cursor: pointer;
     transition: color 0.3s ease;
   }
-  
+
   /* Style for the title of each project */
   .card-title {
     margin-bottom: 0.5rem;
@@ -203,8 +196,135 @@
   
   /* Adjustments for smaller screens */
   @media (max-width: 767px) {
-    .project-links {
+    .project-card {
       justify-content: center; /* Center icons on smaller screens */
     }
+  }
+
+  .card-container {
+    perspective: 1000px;
+  }
+  
+
+  
+/* Style for the project cards */
+  /* .project-card {
+    border: none;
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    perspective: 1000px;
+    position: relative;
+    transform-style: preserve-3d;
+    width: 100%;
+    height: 100%;
+
+  } */
+
+  .project-card {
+    background-color: white; /* Set background to white */
+    border: 1px solid black; /* Add black border */
+    /* border-radius: 10px; Optional: rounded corners for the card */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: adds some depth */
+    transition: transform 0.3s ease-in-out;
+    perspective: 1000px;
+    position: relative;
+    transform-style: preserve-3d;
+    width: 100%; /* Or set a specific width */
+    height: 100%; /* Or set a specific height */
+    /* overflow: hidden; Ensures the content does not overflow */
+  }
+  
+
+  
+
+
+
+  
+  .card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+  }
+  
+  .card-front,
+  .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden; /* For Safari */
+    background-color: white; /* Set background to white */
+    color: black; /* Set text color to black */
+    border: 1px solid black; /* Add black border */
+
+
+  }
+  
+  .card-front {
+    background-color: #000000;
+    z-index: 2;
+  }
+  
+  .card-back {
+    background-color: black;
+    transform: rotateY(180deg);
+    z-index: 1;
+  }
+  
+  .card-container.is-flipped .project-card {
+    transform: rotateY(180deg);
+  }
+  
+
+
+  .toggle-switch {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+    background: #ccc;
+    border-radius: 20px;
+    margin-right: 8px;
+    vertical-align: middle;
+    transition: background-color 0.2s;
+  }
+  
+  .switch::after {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 16px;
+    height: 16px;
+    background-color: white;
+    border-radius: 50%;
+    transition: transform 0.2s;
+  }
+  
+  .toggle-switch input[type="checkbox"] {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .toggle-switch input[type="checkbox"]:checked + .switch {
+    background-color: #4caf50;
+  }
+  
+  .toggle-switch input[type="checkbox"]:checked + .switch::after {
+    transform: translateX(20px);
   }
   
