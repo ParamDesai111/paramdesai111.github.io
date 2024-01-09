@@ -252,6 +252,23 @@
   .card-container.is-flipped .project-card {
     transform: rotateY(180deg);
   }
+
+
+  /* Styles for smaller screens */
+  @media (max-width: 767px) {
+    .project-card {
+      /* Adjust the styles for smaller screens if needed */
+    }
+
+    .project-links {
+      flex-direction: column; /* Stack icons vertically on smaller screens */
+      align-items: center; /* Center align the icons */
+    }
+    
+    .project-btn {
+      margin: 10px 0; /* Add some vertical space between icons */
+    }
+  }
   
 
 
