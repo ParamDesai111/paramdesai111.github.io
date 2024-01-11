@@ -20,6 +20,13 @@ const projectData = [
         tech: "MongoDB Node.js Express.js JavaScript HTML CSS",
         github_url: "https://youtu.be/6PqKeg6QgxA",
         live_url:   "https://youtu.be/6PqKeg6QgxA",
+    },
+    {
+        id: 4,
+        title: "Office Supplies Database Management System",
+        tech: "MongoDB Node.js Express.js JavaScript HTML CSS",
+        github_url: "https://youtu.be/6PqKeg6QgxA",
+        live_url:   "https://youtu.be/6PqKeg6QgxA",
     }
 ];
 
