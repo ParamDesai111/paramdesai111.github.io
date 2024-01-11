@@ -197,7 +197,7 @@
   /* Style for the project links */
   .project-links {
     display: flex;
-    justify-content: start;
+    /* justify-content: start; */
     /* Align icons to the start of the container */
   }
 
