@@ -23,7 +23,7 @@ const projectData = [
     },
     {
         id: 4,
-        title: "Office Supplies Database Management System",
+        title: "Office Supplies Database Management App",
         tech: "MongoDB Node.js Express.js JavaScript HTML CSS",
     }
 ];
