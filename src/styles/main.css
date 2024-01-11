@@ -188,10 +188,18 @@
   /* Style for the tech stack */
   .tech-stack {
     margin-bottom: 10px;
-    color: #aaa;
-    /* Lighter text color for tech stack */
-    font-size: 0.9rem;
-    /* Smaller font size for tech stack */
+    color: black; /* Dark text color */
+    font-size: 1.2rem; /* Adjusted font size */
+    text-align: center; /* Center text */
+    padding: 0 20px; /* Add padding for better spacing */
+  }
+
+  .tech-heading{
+    margin-bottom: 10px;
+    color: black; /* Dark text color */
+    font-size: 1.5rem; /* Adjusted font size */
+    text-align: center; /* Center text */
+    padding: 0 20px; /* Add padding for better spacing */
   }
 
   /* Style for the project links */

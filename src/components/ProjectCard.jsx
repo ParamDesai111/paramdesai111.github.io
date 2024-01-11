@@ -40,6 +40,7 @@ function ProjectCard({ project }) {
         </div>
         {/* Back of the card */}
         <div className="card-back">
+          <div className="tech-heading">{"Made with"}</div>
           <div className="tech-stack">{project.tech}</div>
           {/* Toggle switch for flipping the card */}
           <div className="toggle-switch" onClick={handleFlip}>
