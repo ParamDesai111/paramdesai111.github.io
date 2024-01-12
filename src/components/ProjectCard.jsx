@@ -23,9 +23,11 @@ function ProjectCard({ project }) {
         <div className="card-front">
           <h5 className="card-title">{project.title}</h5>
           <div className="project-links" onClick={handleLinkClick}>
-            <a href={project.github_url} target="_blank" rel="noopener noreferrer" className="project-btn">
-              <FaGithub /> {/* GitHub Icon */}
-            </a>
+            {project.github_url && (
+              <a href={project.github_url} target="_blank" rel="noopener noreferrer" className="project-btn">
+                <FaGithub /> {/* GitHub Icon */}
+              </a>
+            )}
             {project.live_url && (
               <a href={project.live_url} target="_blank" rel="noopener noreferrer" className="project-btn">
                 <FaLink /> {/* External Link Icon */}
