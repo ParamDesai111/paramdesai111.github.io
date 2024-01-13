@@ -1,365 +1,365 @@
-  body,
-  html {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    background-color: #f8f9fa;
-    /* Light background */
-    color: #333;
-    /* Dark text */
-    scroll-behavior: smooth;
+body,
+html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-color: #f8f9fa;
+  /* Light background */
+  color: #333;
+  /* Dark text */
+  scroll-behavior: smooth;
 
-  }
+}
 
-  .section {
-    min-height: 100vh;
-    /* Make each section fill the viewport */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    /* Center content vertically and horizontally */
-  }
+.section {
+  min-height: 100vh;
+  /* Make each section fill the viewport */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* Center content vertically and horizontally */
+}
 
-  #home {
-    background: #f8f9fa;
-  }
+#home {
+  background: #f8f9fa;
+}
 
-  #about {
-    background: #e9ecef;
-  }
+#about {
+  background: #e9ecef;
+}
 
-  #experience {
-    background: #dee2e6;
-  }
+#experience {
+  background: #dee2e6;
+}
 
-  #projects {
-    background: #ced4da;
-  }
+#projects {
+  background: #ced4da;
+}
 
-  #home {
-    padding-top: 70px;
-    /* Height of the navbar */
-  }
+#home {
+  padding-top: 70px;
+  /* Height of the navbar */
+}
 
-  .timeline {
-    position: relative;
-    padding-left: 30px;
-    list-style: none;
-  }
+.timeline {
+  position: relative;
+  padding-left: 30px;
+  list-style: none;
+}
 
-  .timeline::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    width: 2.5px;
-    background: #000000;
-  }
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 2.5px;
+  background: #000000;
+}
 
-  /*   
-  .timeline-item {
-    position: relative;
-    margin-bottom: 20px;
-  }
-  
-  .timeline-dot {
-    position: absolute;
-    left: -36.5px;
-    top: 7px;
-    width: 16px;
-    height: 16px;
-    border-radius: 50%;
-    background: #007bff;
-    z-index: 1;
-  } */
-  .timeline-item {
-    position: relative;
-    margin-bottom: 20px;
-    display: flex;
-    align-items: center;
-    /* Align the dot, content, and logo vertically */
-  }
+/*   
+.timeline-item {
+  position: relative;
+  margin-bottom: 20px;
+}
 
-  .timeline-dot {
-    position: absolute;
-    /* Adjusted from absolute to relative */
-    left: -36.5px;
-    top: 7px;
-    width: 16px;
-    height: 16px;
-    border-radius: 50%;
-    background: #ef4914;
-    z-index: 1;
-    flex-shrink: 0;
-    /* Prevent the dot from shrinking */
-  }
+.timeline-dot {
+  position: absolute;
+  left: -36.5px;
+  top: 7px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #007bff;
+  z-index: 1;
+} */
+.timeline-item {
+  position: relative;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  /* Align the dot, content, and logo vertically */
+}
 
-  .timeline-title {
-    margin-bottom: 5px;
-    font-weight: bold;
-    font-size: 1.25rem;
-    color: black;
-    /* Adjust the color to match your design */
-  }
+.timeline-dot {
+  position: absolute;
+  /* Adjusted from absolute to relative */
+  left: -36.5px;
+  top: 7px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #ef4914;
+  z-index: 1;
+  flex-shrink: 0;
+  /* Prevent the dot from shrinking */
+}
 
-  .timeline-company {
-    margin-bottom: 5px;
-    font-weight: bold;
-    font-size: 1.2rem;
-    color: #ef4914;
-    /* Adjust the color to match your design */
-  }
+.timeline-title {
+  margin-bottom: 5px;
+  font-weight: bold;
+  font-size: 1.25rem;
+  color: black;
+  /* Adjust the color to match your design */
+}
 
-  .timeline-content {
-    flex-grow: 1;
-    /* Allow content to fill the space */
-  }
+.timeline-company {
+  margin-bottom: 5px;
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #ef4914;
+  /* Adjust the color to match your design */
+}
 
-
-  /* .timeline-date {
-    margin-bottom: 5px;
-    font-weight: bold;
-  } */
-  .timeline-date {
-    display: inline-block;
-    margin-bottom: 5px;
-    font-weight: bold;
-    background-color: #ef4914;
-    /* Adjust the color to match your design */
-    color: white;
-    /* Text color */
-    padding: 8px 16px;
-    /* Adjust padding to your preference */
-    border-radius: 20px;
-    /* Gives the rounded corners */
-    font-size: 1rem;
-    /* Adjust font-size as needed */
-    /* Additional properties for better appearance */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    /* Optional: Adds a subtle shadow */
-  }
-
-  .timeline-logo {
-    margin-left: auto;
-    /* Push the logo to the right */
-    padding-left: 20px;
-    /* Space between content and logo */
-  }
-
-  .timeline-logo img {
-    display: block;
-    /* Remove inline-block alignments */
-    max-width: 150px;
-    /* Set a maximum width for the logo */
-    height: auto;
-    /* Maintain aspect ratio */
-  }
-
-  /* .timeline-content {
-    margin-left: 10px; Give some space for the dot
-  } */
-
-  .timeline-content h3 {
-    margin-top: 0;
-    font-size: 1.25rem;
-  }
-
-  .timeline-content p {
-    margin-bottom: 0;
-  }
-
-  .navbar-brand {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #333;
-    margin-left: 30px;
-  }
+.timeline-content {
+  flex-grow: 1;
+  /* Allow content to fill the space */
+}
 
 
+/* .timeline-date {
+  margin-bottom: 5px;
+  font-weight: bold;
+} */
+.timeline-date {
+  display: inline-block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  background-color: #ef4914;
+  /* Adjust the color to match your design */
+  color: white;
+  /* Text color */
+  padding: 8px 16px;
+  /* Adjust padding to your preference */
+  border-radius: 20px;
+  /* Gives the rounded corners */
+  font-size: 1rem;
+  /* Adjust font-size as needed */
+  /* Additional properties for better appearance */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* Optional: Adds a subtle shadow */
+}
 
-  .project-card:hover {
-    transform: translateY(-5px);
-    /* Slight move up on hover */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-  }
+.timeline-logo {
+  margin-left: auto;
+  /* Push the logo to the right */
+  padding-left: 20px;
+  /* Space between content and logo */
+}
 
-  /* Style for the tech stack */
-  .tech-stack {
-    margin-bottom: 10px;
-    color: black; /* Dark text color */
-    font-size: 1.2rem; /* Adjusted font size */
-    text-align: center; /* Center text */
-    padding: 0 20px; /* Add padding for better spacing */
-  }
+.timeline-logo img {
+  display: block;
+  /* Remove inline-block alignments */
+  max-width: 150px;
+  /* Set a maximum width for the logo */
+  height: auto;
+  /* Maintain aspect ratio */
+}
 
-  .tech-heading{
-    margin-bottom: 10px;
-    color: black; /* Dark text color */
-    font-size: 1.5rem; /* Adjusted font size */
-    text-align: center; /* Center text */
-    padding: 0 20px; /* Add padding for better spacing */
-  }
+/* .timeline-content {
+  margin-left: 10px; Give some space for the dot
+} */
 
-  /* Style for the project links */
-  .project-links {
-    display: flex;
-    /* justify-content: start; */
-    /* Align icons to the start of the container */
-  }
+.timeline-content h3 {
+  margin-top: 0;
+  font-size: 1.25rem;
+}
 
-  /* Style for the project buttons */
-  .project-btn {
-    color: black;
-    /* White icon color */
-    margin-right: 10px;
-    /* Space between icons */
-    font-size: 1.5rem;
-    /* Size of icons */
-    transition: color 0.3s ease-in-out;
-  }
+.timeline-content p {
+  margin-bottom: 0;
+}
 
-  .project-btn:hover {
-    background: transparent;
-    border: none;
-    cursor: pointer;
-    transition: color 0.3s ease;
-  }
-
-  /* Style for the title of each project */
-  .card-title {
-    margin-bottom: 0.5rem;
-  }
-
-  .card-container {
-    perspective: 1500px;
-    margin-bottom: 2rem;
-    width: 100%; /* Adjust width as necessary */
-    height: 300px; /* Adjust height as necessary */
-  }
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+  margin-left: 30px;
+}
 
 
+
+.project-card:hover {
+  transform: translateY(-5px);
+  /* Slight move up on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+/* Style for the tech stack */
+.tech-stack {
+  margin-bottom: 10px;
+  color: black; /* Dark text color */
+  font-size: 1.2rem; /* Adjusted font size */
+  text-align: center; /* Center text */
+  padding: 0 20px; /* Add padding for better spacing */
+}
+
+.tech-heading{
+  margin-bottom: 10px;
+  color: black; /* Dark text color */
+  font-size: 1.5rem; /* Adjusted font size */
+  text-align: center; /* Center text */
+  padding: 0 20px; /* Add padding for better spacing */
+}
+
+/* Style for the project links */
+.project-links {
+  display: flex;
+  /* justify-content: start; */
+  /* Align icons to the start of the container */
+}
+
+/* Style for the project buttons */
+.project-btn {
+  color: black;
+  /* White icon color */
+  margin-right: 10px;
+  /* Space between icons */
+  font-size: 1.5rem;
+  /* Size of icons */
+  transition: color 0.3s ease-in-out;
+}
+
+.project-btn:hover {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+/* Style for the title of each project */
+.card-title {
+  margin-bottom: 0.5rem;
+}
+
+.card-container {
+  perspective: 1500px;
+  margin-bottom: 2rem;
+  width: 100%; /* Adjust width as necessary */
+  height: 300px; /* Adjust height as necessary */
+}
+
+
+.project-card {
+  transition: transform 0.3s ease-in-out;
+  position: relative;
+  transform-style: preserve-3d;
+  width: 100%;
+  height: 100%;
+}
+
+.card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  cursor: pointer;
+  border: 1px solid black; /* Add black border around the entire card */
+
+}
+
+.card-front,
+.card-back {
+  background-color: white; /* Set background to white */
+  color: black; /* Set text color to black */
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden; /* For Safari */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+
+}
+
+.card-front {
+  z-index: 2;
+}
+
+.card-back {
+  transform: rotateY(180deg);
+  z-index: 1;
+}
+
+.card-container.is-flipped .project-card {
+  transform: rotateY(180deg);
+}
+
+
+/* Styles for smaller screens */
+@media (max-width: 767px) {
   .project-card {
-    transition: transform 0.3s ease-in-out;
-    position: relative;
-    transform-style: preserve-3d;
-    width: 100%;
-    height: 100%;
+    /* Adjust the styles for smaller screens if needed */
+    transform: scale(0.9);
+    margin: 0 auto;
+    /* Center the card in the column */
   }
 
-  .card-inner {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    transition: transform 0.6s;
-    transform-style: preserve-3d;
-    cursor: pointer;
-    border: 1px solid black; /* Add black border around the entire card */
-
-  }
-
-  .card-front,
-  .card-back {
-    background-color: white; /* Set background to white */
-    color: black; /* Set text color to black */
-    backface-visibility: hidden;
-    -webkit-backface-visibility: hidden; /* For Safari */
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
+  .project-links {
     flex-direction: column;
+    /* Stack icons vertically on smaller screens */
     align-items: center;
-    justify-content: center;
-
-
+    /* Center align the icons */
   }
 
-  .card-front {
-    z-index: 2;
+  .project-btn {
+    margin: 10px 0;
+    /* Add some vertical space between icons */
   }
-
-  .card-back {
-    transform: rotateY(180deg);
-    z-index: 1;
-  }
-
-  .card-container.is-flipped .project-card {
-    transform: rotateY(180deg);
-  }
-
-
-  /* Styles for smaller screens */
-  @media (max-width: 767px) {
-    .project-card {
-      /* Adjust the styles for smaller screens if needed */
-      transform: scale(0.9);
-      margin: 0 auto;
-      /* Center the card in the column */
-    }
-
-    .project-links {
-      flex-direction: column;
-      /* Stack icons vertically on smaller screens */
-      align-items: center;
-      /* Center align the icons */
-    }
-
-    .project-btn {
-      margin: 10px 0;
-      /* Add some vertical space between icons */
-    }
-  }
+}
 
 
 
-  .toggle-switch {
-    position: absolute;
-    bottom: 10px;
-    right: 10px;
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-  }
+.toggle-switch {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
 
-  .switch {
-    position: relative;
-    display: inline-block;
-    width: 40px;
-    height: 20px;
-    background: #ccc;
-    border-radius: 20px;
-    margin-right: 8px;
-    vertical-align: middle;
-    transition: background-color 0.2s;
-  }
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+  background: #ccc;
+  border-radius: 20px;
+  margin-right: 8px;
+  vertical-align: middle;
+  transition: background-color 0.2s;
+}
 
-  .switch::after {
-    content: '';
-    position: absolute;
-    top: 2px;
-    left: 2px;
-    width: 16px;
-    height: 16px;
-    background-color: white;
-    border-radius: 50%;
-    transition: transform 0.2s;
-  }
+.switch::after {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 16px;
+  height: 16px;
+  background-color: white;
+  border-radius: 50%;
+  transition: transform 0.2s;
+}
 
-  .toggle-switch input[type="checkbox"] {
-    opacity: 0;
-    width: 0;
-    height: 0;
-  }
+.toggle-switch input[type="checkbox"] {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
 
-  .toggle-switch input[type="checkbox"]:checked+.switch {
-    background-color: #4caf50;
-  }
+.toggle-switch input[type="checkbox"]:checked+.switch {
+  background-color: #4caf50;
+}
 
-  .toggle-switch input[type="checkbox"]:checked+.switch::after {
-    transform: translateX(20px);
-  }
+.toggle-switch input[type="checkbox"]:checked+.switch::after {
+  transform: translateX(20px);
+}
