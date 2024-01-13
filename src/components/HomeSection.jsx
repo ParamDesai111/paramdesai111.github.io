@@ -19,19 +19,14 @@ function HomeSection() {
     },
     particles: {
       number: {
-        value: 10, // Number of particles (logos)
+        value: 5, // Number of particles (logos)
         density: {
           enable: true,
           area: 800
         }
       },
       shape: {
-        type: 'image',
-        image: [
-          { src: logo1, height: 20, width: 20 },
-          { src: logo2, height: 20, width: 20 },
-          // Add more logos here
-        ]
+        type: 'circle', // Use a simple shape for testing
       },
       opacity: {
         value: 0.8,

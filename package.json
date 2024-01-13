@@ -20,7 +20,7 @@
     "react-parallax": "^3.5.1",
     "react-router-dom": "^5.2.0",
     "react-scripts": "^5.0.1",
-    "tsparticles": "^3.0.3"
+    "react-tsparticles": "^2.12.2"
   },
   "devDependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
