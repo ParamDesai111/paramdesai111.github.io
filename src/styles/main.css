@@ -78,7 +78,7 @@ html {
   position: relative;
   margin-bottom: 20px;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   /* Align the dot, content, and logo vertically */
 }
 
@@ -86,7 +86,7 @@ html {
   position: absolute;
   /* Adjusted from absolute to relative */
   left: -36.5px;
-  top: 7px;
+  top: 30px;
   width: 16px;
   height: 16px;
   border-radius: 50%;
@@ -124,6 +124,7 @@ html {
 } */
 .timeline-date {
   display: inline-block;
+  margin-top: 15px;
   margin-bottom: 5px;
   font-weight: bold;
   background-color: #ef4914;
@@ -170,6 +171,10 @@ html {
   margin-bottom: 0;
 }
 
+.timeline-description {
+  margin-bottom: 15px;
+  /* Adjust the color to match your design */
+}
 .navbar-brand {
   font-size: 1.5rem;
   font-weight: bold;

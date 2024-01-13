@@ -14,6 +14,14 @@ const experienceData = [
         scripts for automating tasks, thereby streamlining system processes 
         and enhancing efficiency within the Azure environment.`,
         logo: 'https://seeklogo.com/images/A/avanade-logo-60078FCF19-seeklogo.com.png'
+    },
+    {
+        id: 2,
+        date: "Graduation Expected May 2026",
+        company: "Carleton University",
+        title: "Bachelor of Computer Science (Major in Artificial Intelligence/Machine Learning)",
+        description: `Relevant Coursework: Data Structures and Algorithms, Systems Programming, Debugging and Analytical Skills`,
+        logo: 'https://www.fws.gov/sites/default/files/styles/large/public/2020-08/CarletonCrest2.png?itok=SLE-uiji'
     }
     // Add more experiences here
 ];
