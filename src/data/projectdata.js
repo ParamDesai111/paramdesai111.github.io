@@ -26,6 +26,12 @@ const projectData = [
         id: 4,
         title: "Supplies Database Management App",
         tech: "MongoDB Node.js Express.js JavaScript HTML CSS",
+    },
+    {
+        id: 5,
+        title: "Threaded Phasmophobia Simulation",
+        tech: "C Multi-Threading MakeFile",
+        github_url: "https://github.com/ParamDesai111/Threaded-Phasmophobia-Simulation",
     }
 ];
 
