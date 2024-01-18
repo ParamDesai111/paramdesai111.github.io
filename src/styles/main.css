@@ -379,8 +379,6 @@ html {
   overflow: hidden;
   /* ... other styles ... */
 }
-
-
 .profile-image {
   width: 200px;
   height: 200px;
@@ -388,14 +386,19 @@ html {
   object-fit: cover; /* Ensure the image covers the area without distortion */
   border: 3px solid #ef4914; /* Optional: border color */
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Optional: adds subtle shadow */
+  margin-left: 120px; /* Align the image to the right */
+  display: block; /* Needed for margin auto to work */
 }
 
 .social-links {
   margin-top: 20px;
+  display: flex;
+  justify-content: center; /* Center the icons */
+  flex-wrap: wrap; /* Ensure the icons wrap on smaller screens */
 }
 
 .social-link {
-  margin-right: 10px;
+  margin: 5px; /* Spacing around each icon */
   font-size: 24px; /* Adjust icon size */
   color: #333; /* Icon color */
 }
@@ -410,6 +413,8 @@ html {
     margin-top: 20px;
     width: 150px;
     height: 150px;
+    margin-left: auto;
+    margin-right: auto; /* Center the image on smaller screens */
   }
 
   .home-section .row {
@@ -419,8 +424,5 @@ html {
 
   .social-links {
     justify-content: center;
-    display: flex;
   }
 }
-
-
