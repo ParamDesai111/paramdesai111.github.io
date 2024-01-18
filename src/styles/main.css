@@ -23,6 +23,7 @@ html {
 
 #home {
   background: #f8f9fa;
+  position: relative;
 }
 
 #about {
@@ -368,3 +369,58 @@ html {
 .toggle-switch input[type="checkbox"]:checked+.switch::after {
   transform: translateX(20px);
 }
+
+
+
+
+
+.home-section {
+  position: relative;
+  overflow: hidden;
+  /* ... other styles ... */
+}
+
+
+.profile-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%; /* Makes the image circular */
+  object-fit: cover; /* Ensure the image covers the area without distortion */
+  border: 3px solid #ef4914; /* Optional: border color */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Optional: adds subtle shadow */
+}
+
+.social-links {
+  margin-top: 20px;
+}
+
+.social-link {
+  margin-right: 10px;
+  font-size: 24px; /* Adjust icon size */
+  color: #333; /* Icon color */
+}
+
+.social-link:hover {
+  color: #ef4914; /* Icon hover color */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .profile-image {
+    margin-top: 20px;
+    width: 150px;
+    height: 150px;
+  }
+
+  .home-section .row {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .social-links {
+    justify-content: center;
+    display: flex;
+  }
+}
+
+
