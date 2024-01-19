@@ -1,6 +1,6 @@
 import React from 'react';
 import faceImage from '../images/face.jpg'; // Import your face image
-import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa'; // Import icons
+import { FaGithub, FaLinkedin, FaAt } from 'react-icons/fa'; // Import icons
 
 function HomeSection() {
   return (
@@ -13,9 +13,9 @@ function HomeSection() {
         <div className="col-md-6 text-center">
           <img src={faceImage} alt="Param Desai" className="profile-image" />
           <div className="social-links">
-            <a href="https://github.com/yourusername" className="social-link"><FaGithub /></a>
-            <a href="https://linkedin.com/in/yourusername" className="social-link"><FaLinkedin /></a>
-            <a href="https://twitter.com/yourusername" className="social-link"><FaTwitter /></a>
+            <a href="https://github.com/ParamDesai111" className="social-link"><FaGithub /></a>
+            <a href="https://www.linkedin.com/in/paramdesai111/" className="social-link"><FaLinkedin /></a>
+            <a href="param.desai101@gmail.com" className="social-link"><FaAt /></a>
             {/* Add more social links if needed */}
           </div>
         </div>
