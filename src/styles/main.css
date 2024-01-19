@@ -38,10 +38,6 @@ html {
   background: #ced4da;
 }
 
-#home {
-  padding-top: 70px;
-  /* Height of the navbar */
-}
 
 .timeline {
   position: relative;
@@ -374,7 +370,6 @@ html {
 .home-section {
   position: relative;
   overflow: hidden;
-  /* ... other styles ... */
 }
 
 
@@ -389,18 +384,32 @@ html {
   display: block; /* Needed for margin auto to work */
 }
 
-.social-links {
-  margin-top: 20px;
+
+.button-and-icons {
   display: flex;
-  justify-content: center; /* Center the icons below the image */
-  flex-wrap: wrap; /* Ensure the icons wrap on smaller screens */
+  align-items: center;
+  justify-content: flex-start;
+  gap: 15px; /* Adjust the space between button and icons */
+}
+
+.social-links {
+  display: flex;
+  gap: 5px; /* Adjust the space between icons */
+  margin-top: auto;
+}
+
+/* Ensure the button and icons are appropriately sized and spaced */
+.resume-btn, .social-link {
+  margin-bottom: 0; /* Remove bottom margin if any */
 }
 
 .social-link {
-  margin: 5px; /* Spacing around each icon */
-  font-size: 30px; /* Increase icon size */
-  color: #333; /* Icon color */
-  position: relative; /* Needed for tooltip */
+  margin: 5px;
+  font-size: 20px; 
+  color: #333;
+  position: relative;
+  text-decoration: none; /* Remove underline from link */
+  font-weight: 500;
 }
 
 .social-link:hover::after {
@@ -419,6 +428,11 @@ html {
   display: block; /* Ensure it's displayed */
   opacity: 0; /* Hide it initially */
   transition: opacity 0.3s ease, transform 0.3s ease; /* Smooth transition for tooltip */
+}
+
+.social-link:hover{
+  text-decoration: underline; /* Add underline to the link */
+
 }
 
 .social-link:hover::after {
@@ -442,8 +456,9 @@ html {
 
 
 .resume-btn {
-  background-color: #ef4914; /* Button background color */
-  color: white; /* Text color */
+  /* background-color: #ef4914; Button background color */
+  /* color: white; Text color */
+  color: black;
   padding: 10px 20px; /* Button padding */
   border: none; /* Remove border */
   border-radius: 4px; /* Rounded corners */
