@@ -379,8 +379,8 @@ html {
 
 
 .profile-image {
-  width: 200px;
-  height: 200px;
+  width: 250px;
+  height: 250px;
   border-radius: 50%; /* Makes the image circular */
   object-fit: cover; /* Ensure the image covers the area without distortion */
   border: 3px solid #ef4914; /* Optional: border color */
@@ -400,10 +400,30 @@ html {
   margin: 5px; /* Spacing around each icon */
   font-size: 30px; /* Increase icon size */
   color: #333; /* Icon color */
+  position: relative; /* Needed for tooltip */
 }
 
-.social-link:hover {
-  color: #ef4914; /* Icon hover color */
+.social-link:hover::after {
+  content: attr(data-tooltip); /* Use the data attribute as content */
+  position: absolute;
+  bottom: 100%; /* Position it at the bottom of the icon */
+  left: 50%; /* Center horizontally relative to the icon */
+  transform: translateX(-50%) translateY(-5px); /* Adjust horizontal position and slightly lift it up */
+  background-color: #333;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  white-space: nowrap;
+  z-index: 1;
+  display: block; /* Ensure it's displayed */
+  opacity: 0; /* Hide it initially */
+  transition: opacity 0.3s ease, transform 0.3s ease; /* Smooth transition for tooltip */
+}
+
+.social-link:hover::after {
+  opacity: 1; /* Show the tooltip on hover */
+  transform: translateX(-50%) translateY(-10px); /* Move it a bit upwards on hover */
 }
 
 /* Responsive adjustments */
@@ -418,4 +438,26 @@ html {
     flex-direction: column-reverse;
     text-align: center;
   }
+}
+
+
+.resume-btn {
+  background-color: #ef4914; /* Button background color */
+  color: white; /* Text color */
+  padding: 10px 20px; /* Button padding */
+  border: none; /* Remove border */
+  border-radius: 4px; /* Rounded corners */
+  font-weight: bold; /* Bold text */
+  text-transform: uppercase; /* Uppercase text */
+  text-decoration: none; /* Remove underline from link */
+  display: inline-block; /* Align properly as a button */
+  margin-top: 20px; /* Spacing above the button */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transitions for hover effects */
+}
+
+.resume-btn:hover, .resume-btn:focus {
+  background-color: #d43723; /* Slightly darker color on hover/focus */
+  transform: translateY(-2px); /* Slight move up on hover/focus */
+  text-decoration: none; /* Ensure underline doesn't reappear on hover */
+  color: white; /* Maintain text color on hover */
 }

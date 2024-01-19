@@ -16,6 +16,13 @@ const projectData = [
     },
     {
         id: 3,
+        title: "Param's Portfolio Website",
+        tech: "React.js JavaScript HTML CSS Bootstrap",
+        github_url: "https://github.com/ParamDesai111/ParamDesai111.github.io",
+        live_url: "https://paramdesai.netlify.app/",
+    },
+    {
+        id: 4,
         title: "Tetris Game Project",
         tech: "HTML CSS JavaScript",
         github_url: "https://github.com/ParamDesai111/Tetris-Game-Project",
@@ -23,14 +30,14 @@ const projectData = [
 
     },
     {
-        id: 4,
+        id: 5,
         title: "Supplies Database Management App",
         tech: "MongoDB Node.js Express.js JavaScript HTML CSS",
     },
     {
-        id: 5,
+        id: 6,
         title: "Threaded Phasmophobia Simulation",
-        tech: "C Multi-Threading MakeFile",
+        tech: "C Multi-Threading",
         github_url: "https://github.com/ParamDesai111/Threaded-Phasmophobia-Simulation",
     }
 ];
