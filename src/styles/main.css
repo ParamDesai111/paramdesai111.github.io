@@ -600,17 +600,22 @@ html {
   50% { border-color: black; }
 }
 
+
 .tech-skills {
   display: flex;
-  flex-wrap: wrap;
-  gap: 15px;
+  justify-content: space-evenly; /* Distributes space evenly between items */
+  align-items: center;
+  flex-wrap: nowrap; /* Prevents wrapping to a new line */
+  overflow-x: auto; /* Enables horizontal scrolling for overflow */
   margin-top: 20px;
+  padding: 0 10px; /* Adds some padding on the sides */
 }
 
 .tech-item {
   display: flex;
   flex-direction: column;
   align-items: center;
+  white-space: nowrap; /* Prevents text from wrapping */
 }
 
 .tech-item img {
@@ -623,3 +628,39 @@ html {
   font-size: 0.9rem;
   text-align: center;
 }
+
+.centered-heading {
+  text-align: center;
+  margin-top: 30px;
+}
+
+
+.certifications {
+  text-align: center;
+  padding: 20px;
+}
+
+.certification-item {
+  margin-bottom: 20px;
+}
+
+.certification-item h4 {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.certification-item p {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.certification-item a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.certification-item a:hover {
+  text-decoration: underline;
+}
+
