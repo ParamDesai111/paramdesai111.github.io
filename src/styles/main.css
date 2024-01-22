@@ -398,14 +398,14 @@ html {
 
 .orbit-logo {
   position: absolute;
-  width: 50px;
+  width: 40px;
   height: auto;
   opacity: 0.7;
 }
 
 .orbit-1 {
   transform-origin: 50% -100px; /* Position the orbit around the image */
-  animation: rotate 10s linear infinite;
+  animation: rotate1 10s linear infinite;
 
 }
 
@@ -416,7 +416,7 @@ html {
 
 .orbit-3 {
   transform-origin: 20% -150px; /* Larger radius for the second orbit */
-  animation: rotate 8s linear infinite;
+  animation: rotate1 8s linear infinite;
 }
 
 .orbit-4 {
@@ -426,7 +426,7 @@ html {
 
 .orbit-5 {
   transform-origin: 20% -150px; /* Larger radius for the second orbit */
-  animation: rotate 6s linear infinite;
+  animation: rotate1 6s linear infinite;
 }
 
 .orbit-6 {
@@ -436,7 +436,7 @@ html {
 
 .orbit-7 {
   transform-origin: 20% -150px; /* Larger radius for the second orbit */
-  animation: rotate 5.5s linear infinite;
+  animation: rotate1 5.5s linear infinite;
 }
 
 .orbit-8 {
@@ -446,7 +446,7 @@ html {
 
 .orbit-9 {
   transform-origin: 20% -150px; /* Larger radius for the second orbit */
-  animation: rotate 12s linear infinite;
+  animation: rotate1 12s linear infinite;
 }
 
 .orbit-10 {
@@ -456,14 +456,19 @@ html {
 
 .orbit-11 {
   transform-origin: 20% -150px; /* Larger radius for the second orbit */
-  animation: rotate 13s linear infinite;
+  animation: rotate1 13s linear infinite;
 }
 
 
 
 @keyframes rotate {
-  from { transform: rotate(0deg) translateX(250px) rotate(0deg); }
-  to { transform: rotate(360deg) translateX(250px) rotate(-360deg); }
+  from { transform: rotate(0deg) translateX(190px) rotate(0deg); }
+  to { transform: rotate(360deg) translateX(190px) rotate(-360deg); }
+}
+
+@keyframes rotate1 {
+  from { transform: rotate(0deg) translateX(220px) rotate(0deg); }
+  to { transform: rotate(360deg) translateX(220px) rotate(-360deg); }
 }
 
 .button-and-icons {

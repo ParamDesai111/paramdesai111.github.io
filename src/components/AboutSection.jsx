@@ -50,6 +50,14 @@ function AboutSection() {
           <img src={mongodbLogo} alt="MongoDB" />
           <span>MongoDB</span>
         </div>
+        <div className="tech-item">
+          <img src={nodejsLogo} alt="Node.js" />
+          <span>Node.js</span>
+        </div>
+        <div className="tech-item">
+          <img src={pythonLogo} alt="Python" />
+          <span>Python</span>
+        </div>
         
         
 
