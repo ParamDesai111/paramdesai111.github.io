@@ -3,6 +3,17 @@ import faceImage from '../images/face.jpg'; // Import your face image
 import resumepdf from '../images/ResumeParamDesai.pdf'; // Import your resume pdf
 import { FaGithub, FaLinkedin, FaAt, FaScroll } from 'react-icons/fa'; // Import icons
 import jsLogo from '../images/js.png'; // Import JavaScript logo image
+import azureLogo from '../images/azure.png'; // Import JavaScript logo image
+import cLogo from '../images/C.png'; // Import JavaScript logo image
+import gitLogo from '../images/git.png'; // Import JavaScript logo image
+import graphLogo from '../images/graphql.png'; // Import JavaScript logo image
+import reactLogo from '../images/react.png'; // Import JavaScript logo image
+import javaLogo from '../images/java.png'; // Import JavaScript logo image
+import mongodbLogo from '../images/mongodb.png'; // Import JavaScript logo image
+import nodejsLogo from '../images/nodejs.png'; // Import JavaScript logo image
+import pythonLogo from '../images/python.png'; // Import JavaScript logo image
+
+
 
 function HomeSection() {
   return (
@@ -12,8 +23,18 @@ function HomeSection() {
           
           <div className="solar-system">
             <img src={faceImage} alt="Param Desai" className="profile-image" />
-            <img src={jsLogo} alt="JavaScript" className="orbit-logo orbit-1" />
-            {/* <img src={reactLogo} alt="React" className="orbit-logo orbit-2" /> */}
+            {/* <img src={jsLogo} alt="JavaScript" className="orbit-logo orbit-1" /> */}
+            <img src={reactLogo} alt="React" className="orbit-logo orbit-2" />
+            <img src={cLogo} alt="React" className="orbit-logo orbit-3" />
+            <img src={azureLogo} alt="React" className="orbit-logo orbit-4" />
+            <img src={gitLogo} alt="React" className="orbit-logo orbit-5" />
+            <img src={graphLogo} alt="React" className="orbit-logo orbit-6" />
+            <img src={javaLogo} alt="React" className="orbit-logo orbit-7" />
+            <img src={mongodbLogo} alt="React" className="orbit-logo orbit-8" />
+            <img src={nodejsLogo} alt="React" className="orbit-logo orbit-9" />
+            <img src={pythonLogo} alt="React" className="orbit-logo orbit-10" />
+
+
             {/* Add more logos in orbits */}
           </div>
           
