@@ -454,6 +454,11 @@ html {
   animation: rotate 11s linear infinite;
 }
 
+.orbit-11 {
+  transform-origin: 20% -150px; /* Larger radius for the second orbit */
+  animation: rotate 13s linear infinite;
+}
+
 
 
 @keyframes rotate {
@@ -590,3 +595,26 @@ html {
   50% { border-color: black; }
 }
 
+.tech-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.tech-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tech-item img {
+  height: 50px;
+  width: auto;
+  margin-bottom: 5px; /* Space between logo and text */
+}
+
+.tech-item span {
+  font-size: 0.9rem;
+  text-align: center;
+}

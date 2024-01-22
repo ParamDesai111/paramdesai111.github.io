@@ -2,16 +2,18 @@ import React from 'react';
 import faceImage from '../images/face.jpg'; // Import your face image
 import resumepdf from '../images/ResumeParamDesai.pdf'; // Import your resume pdf
 import { FaGithub, FaLinkedin, FaAt, FaScroll } from 'react-icons/fa'; // Import icons
-import jsLogo from '../images/js.png'; // Import JavaScript logo image
-import azureLogo from '../images/azure.png'; // Import JavaScript logo image
-import cLogo from '../images/C.png'; // Import JavaScript logo image
-import gitLogo from '../images/git.png'; // Import JavaScript logo image
-import graphLogo from '../images/graphql.png'; // Import JavaScript logo image
-import reactLogo from '../images/react.png'; // Import JavaScript logo image
-import javaLogo from '../images/java.png'; // Import JavaScript logo image
-import mongodbLogo from '../images/mongodb.png'; // Import JavaScript logo image
-import nodejsLogo from '../images/nodejs.png'; // Import JavaScript logo image
-import pythonLogo from '../images/python.png'; // Import JavaScript logo image
+import jsLogo from '../images/js.png'; 
+import azureLogo from '../images/azure.png'; 
+import cLogo from '../images/C.png'; 
+import gitLogo from '../images/git.png'; 
+import graphLogo from '../images/graphql.png'; 
+import reactLogo from '../images/react.png'; 
+import javaLogo from '../images/java.png';
+import mongodbLogo from '../images/mongodb.png'; 
+import nodejsLogo from '../images/nodejs.png'; 
+import pythonLogo from '../images/python.png'; 
+import powershellLogo from '../images/powershell.png'; 
+
 
 
 
@@ -33,6 +35,7 @@ function HomeSection() {
             <img src={mongodbLogo} alt="React" className="orbit-logo orbit-8" />
             <img src={nodejsLogo} alt="React" className="orbit-logo orbit-9" />
             <img src={pythonLogo} alt="React" className="orbit-logo orbit-10" />
+            <img src={powershellLogo} alt="React" className="orbit-logo orbit-11" />
 
 
             {/* Add more logos in orbits */}
