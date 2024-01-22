@@ -372,18 +372,77 @@ html {
   overflow: hidden;
 }
 
-
-.profile-image {
-  width: 250px;
-  height: 250px;
-  border-radius: 50%; /* Makes the image circular */
-  object-fit: cover; /* Ensure the image covers the area without distortion */
-  border: 3px solid #ef4914; /* Optional: border color */
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Optional: adds subtle shadow */
-  margin: 0 auto; /* Center the image */
-  display: block; /* Needed for margin auto to work */
+.col-md-6{
+  z-index: 4;
 }
 
+.profile-image {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%; 
+  object-fit: cover;
+  border: 3px solid #ef4914; 
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); 
+  margin: 0 auto;
+  display: block; 
+  margin-bottom : 35px;
+  z-index: 10;
+}
+
+
+
+.profile-image-container {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  margin: 0 auto; /* Center the container */
+  z-index: 2; /* Ensure the image is above the orbits */
+}
+
+
+.solar-system {
+  position: absolute;
+  /* top: 50%;  Center vertically relative to the profile image */
+  /* left: 50%; Center horizontally relative to the profile image */
+  transform: translate(-50%, -50%); /* Adjust to center the container */
+  width: 500px; /* Width of the orbit system */
+  height: 500px; /* Height of the orbit system */
+  z-index: 1; /* Ensure the orbits are behind the profile image */
+}
+
+.orbit-logo {
+  position: absolute;
+  width: 50px; /* Adjust size of logos */
+  height: 50px; /* Adjust size of logos */
+  animation: rotate 10s linear infinite;
+  /* Position logos at the center to start */
+  top: 50%;
+  left: 50%;
+  /* Adjust transform-origin to control the orbit radius */
+  transform-origin: 200px 200px; /* Increase for larger orbit */
+}
+
+.orbit-1 {
+  top: 20%; /* Center vertically */
+  left: 80%; /* Center horizontally */
+  bottom: 20%;
+  right: 20%;
+  transform-origin: -100px 0; /* Adjust distance from center */
+  animation-delay: 0s;
+  opacity: 0.5; /* Optional: reduce the opacity of the logos */
+}
+
+.orbit-2 {
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform-origin: -150px 0; /* Adjust distance from center */
+  animation-delay: -5s; /* Negative delay for varied start */
+}
+
+@keyframes rotate {
+  from { transform: rotate(0deg) translateX(150px) rotate(0deg); }
+  to { transform: rotate(360deg) translateX(150px) rotate(-360deg); }
+}
 
 .button-and-icons {
   display: flex;
@@ -398,10 +457,6 @@ html {
   margin-top: auto;
 }
 
-/* Ensure the button and icons are appropriately sized and spaced */
-.resume-btn, .social-link {
-  margin-bottom: 0; /* Remove bottom margin if any */
-}
 
 .social-link {
   margin: 5px;
@@ -411,6 +466,15 @@ html {
   text-decoration: none; /* Remove underline from link */
   font-weight: 500;
 }
+.social-link span {
+  margin-left: 8px; /* Space between icon and text */
+  vertical-align: middle; /* Align the text with the icon */
+}
+
+.social-link span:hover {
+  text-decoration: underline;
+}
+
 
 .social-link:hover::after {
   content: attr(data-tooltip); /* Use the data attribute as content */
@@ -430,10 +494,6 @@ html {
   transition: opacity 0.3s ease, transform 0.3s ease; /* Smooth transition for tooltip */
 }
 
-.social-link:hover{
-  text-decoration: underline; /* Add underline to the link */
-
-}
 
 .social-link:hover::after {
   opacity: 1; /* Show the tooltip on hover */
@@ -443,36 +503,73 @@ html {
 /* Responsive adjustments */
 @media (max-width: 768px) {
   .profile-image {
-    margin-top: 20px;
     width: 150px;
     height: 150px;
+    margin-bottom: 30px;
+    margin-top: -40px;
   }
 
   .home-section .row {
     flex-direction: column-reverse;
     text-align: center;
   }
+
+  .social-link {
+    justify-content: center;
+    font-size: 16px; 
+
+  }
+
+  .social-links {
+    justify-content: center;
+  }
+
+  .social-link span {
+    margin-left: 8px; /* Space between icon and text */
+    vertical-align: middle; /* Align the text with the icon */
+  }
+
+  .solar-system {
+    position: relative;
+    display: inline-block;
+    width: 150px; /* Width of the profile image */
+    height: 150px; /* Height of the profile image */
+
+  }
+  .orbit-logo {
+    position: absolute;
+    width: 50px; /* Adjust size of logos */
+    height: auto;
+    animation: rotate 10s linear infinite;
+    /* Ensure logos are positioned at the center to start */
+    top: 50%;
+    left: 50%;
+    /* Adjust transform-origin to control the orbit radius */
+    transform-origin: 150px 150px;
+    z-index: 1; /* Ensure the logos are above the orbits */
+  }
+
+}
+.typing-animation {
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid; /* Cursor effect */
+  animation: typing 3s steps(30, end), blink-caret 0.75s step-end infinite;
+  font-size: 2rem;
+  font-weight: bold;
+  max-width: 100%; /* Prevents from exceeding the container width */
 }
 
-
-.resume-btn {
-  /* background-color: #ef4914; Button background color */
-  /* color: white; Text color */
-  color: black;
-  padding: 10px 20px; /* Button padding */
-  border: none; /* Remove border */
-  border-radius: 4px; /* Rounded corners */
-  font-weight: bold; /* Bold text */
-  text-transform: uppercase; /* Uppercase text */
-  text-decoration: none; /* Remove underline from link */
-  display: inline-block; /* Align properly as a button */
-  margin-top: 20px; /* Spacing above the button */
-  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transitions for hover effects */
+/* Typing animation */
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; } /* Adjust this percentage to fit the text width */
 }
 
-.resume-btn:hover, .resume-btn:focus {
-  background-color: #d43723; /* Slightly darker color on hover/focus */
-  transform: translateY(-2px); /* Slight move up on hover/focus */
-  text-decoration: none; /* Ensure underline doesn't reappear on hover */
-  color: white; /* Maintain text color on hover */
+/* Cursor blink animation */
+@keyframes blink-caret {
+  0%, 100% { border-color: transparent; }
+  50% { border-color: black; }
 }
+
