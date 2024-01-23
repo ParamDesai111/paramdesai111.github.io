@@ -395,6 +395,7 @@ html {
 
 .col-md-6{
   z-index: 4;
+  margin-top: 20px;
 }
 
 .solar-system {
@@ -457,7 +458,7 @@ html {
 
 .orbit-7 {
   transform-origin: 20% -150px; /* Larger radius for the second orbit */
-  animation: rotate1 5.5s linear infinite;
+  animation: rotate 5.5s linear infinite;
 }
 
 .orbit-8 {
