@@ -15,7 +15,7 @@ html {
   min-height: 100vh;
   /* Make each section fill the viewport */
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
   flex-direction: column;
   /* Center content vertically and horizontally */
@@ -38,6 +38,11 @@ html {
   background: #ced4da;
 }
 
+#contact {
+  background: #f8f9fa;
+  position: relative;
+
+}
 
 .timeline {
   position: relative;
@@ -189,37 +194,43 @@ html {
 
 /* Style for the tech stack */
 .tech-stack {
-  margin-bottom: 10px;
-  color: black; /* Dark text color */
-  font-size: 1.2rem; /* Adjusted font size */
   text-align: center; /* Center text */
   padding: 0 20px; /* Add padding for better spacing */
+  font-family: 'Open Sans', sans-serif; /* A simple and modern font */
+  color: #555; /* Slightly lighter color for the tech stack */
+  font-size: 1rem; /* Standard size for readability */
+  text-align: center;
+  margin-bottom: 20px; /* Space at the bottom */
 }
 
 .tech-heading{
   margin-bottom: 10px;
   color: black; /* Dark text color */
-  font-size: 1.5rem; /* Adjusted font size */
   text-align: center; /* Center text */
   padding: 0 20px; /* Add padding for better spacing */
+  font-size: 1.2rem; /* Slightly larger for visibility */
+
 }
 
 /* Style for the project links */
 .project-links {
   display: flex;
-  /* justify-content: start; */
-  /* Align icons to the start of the container */
+  justify-content: space-around;
+  padding-top: 1rem;
 }
 
 /* Style for the project buttons */
 .project-btn {
-  color: black;
-  /* White icon color */
+  color: #333;
   margin-right: 10px;
-  /* Space between icons */
-  font-size: 1.5rem;
-  /* Size of icons */
+  font-size: 2rem;
   transition: color 0.3s ease-in-out;
+  border-radius: 5px; /* Rounded corners for the button */
+  padding: 10px 15px; /* Add padding to increase the button size */
+  margin: 5px; /* Add some margin around the buttons */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition for hover effect */
+  text-decoration: none; /* Remove underline from links */
+
 }
 
 .project-btn:hover {
@@ -227,6 +238,14 @@ html {
   border: none;
   cursor: pointer;
   transition: color 0.3s ease;
+  transform: scale(1.30); /* Slightly increase the size on hover/focus */
+  color: #333; /* Keep the text color white on hover/focus */
+  text-decoration: none; /* Remove underline from links on hover/focus */
+
+}
+.project-btn svg {
+  vertical-align: middle; /* Align the icon vertically */
+  margin-right: 8px; /* Space between icon and text if you have text next to the icon */
 }
 
 /* Style for the title of each project */
@@ -235,7 +254,7 @@ html {
 }
 
 .card-container {
-  perspective: 1500px;
+  perspective: 1000px;
   margin-bottom: 2rem;
   width: 100%; /* Adjust width as necessary */
   height: 300px; /* Adjust height as necessary */
@@ -243,11 +262,11 @@ html {
 
 
 .project-card {
-  transition: transform 0.3s ease-in-out;
-  position: relative;
-  transform-style: preserve-3d;
   width: 100%;
   height: 100%;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  position: relative;
 }
 
 .card-inner {
@@ -283,6 +302,8 @@ html {
 
 .card-front {
   z-index: 2;
+  display: flex;
+  flex-direction: column;
 }
 
 .card-back {
@@ -631,36 +652,89 @@ html {
 
 .centered-heading {
   text-align: center;
-  margin-top: 30px;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+.certifications-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.certifications-scroll {
+  display: flex;
+  overflow-x: auto; /* Enables horizontal scrolling if content overflows */
+  white-space: nowrap; /* Prevents wrapping */
 }
 
 
-.certifications {
-  text-align: center;
-  padding: 20px;
+.certification-card {
+  min-width: 200px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin: 0 10px;
+  overflow: hidden;
+  width: 200px; /* Adjust width as needed */
+  cursor: pointer;
+  display: inline-block; /* Or flex, but inline-block should work */
+  white-space: normal; /* Allow text within cards to wrap */
+  margin-right: 15px;
+  height: 255px; /* Adjust height as needed */
 }
 
-.certification-item {
-  margin-bottom: 20px;
+.certification-image {
+  width: 100%;
+  display: block;
 }
 
-.certification-item h4 {
-  font-size: 1.2rem;
-  color: #333;
-}
-
-.certification-item p {
+.certification-title {
   font-size: 1rem;
-  margin-bottom: 10px;
-}
-
-.certification-item a {
-  color: #007bff;
-  text-decoration: none;
   font-weight: bold;
+  padding: 8px;
+  background-color: #f0f0f0; /* Light background for the title */
+  text-align: center;
+  margin-bottom : 10px;
+  text-align: center; /* Aligns text to the center */
 }
 
-.certification-item a:hover {
-  text-decoration: underline;
+.certification-label {
+  display: block;
+  text-align: center;
+  font-size: 0.8rem;
+  padding: 4px;
+  background-color: #e0e0e0; /* Even lighter background for label */
 }
 
+.scroll-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #fff;
+  border: none;
+  padding: 0.5rem;
+  cursor: pointer;
+  user-select: none;
+  z-index: 10;
+}
+
+.scroll-button.left {
+  left: 0;
+}
+
+.scroll-button.right {
+  right: 0;
+}
+
+.certification-card-link {
+  text-decoration: none; /* Removes underline */
+  color: inherit; /* Inherits text color from parent */
+}
+
+
+
+@media (max-width: 768px) {
+  .certification-card {
+    min-width: 150px; /* Smaller width on smaller screens */
+  }
+}

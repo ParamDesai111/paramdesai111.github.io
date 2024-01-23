@@ -5,6 +5,7 @@ const projectData = [
         tech: "MongoDB Node.js Express.js JavaScript HTML CSS",
         github_url: "https://youtu.be/6PqKeg6QgxA",
         live_url: "https://youtu.be/6PqKeg6QgxA",
+        
     },
 
     {
