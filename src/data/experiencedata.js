@@ -1,6 +1,14 @@
 const experienceData = [
     {
         id: 1,
+        date: "April 2024 - Present",
+        company: "Bank of Canada",
+        title: "Software Engineering Intern",
+        description: "",
+        logo: 'https://coherent-commons.s3.amazonaws.com/organizations/organization/logo/14205103-f71e-4161-b28d-12ff164b7f36.png'
+    },
+    {
+        id: 2,
         date: "July 2023 - October 2023",
         company: "Avanade Inc.",
         title: "Cloud Development Intern",
@@ -16,7 +24,7 @@ const experienceData = [
         logo: 'https://seeklogo.com/images/A/avanade-logo-60078FCF19-seeklogo.com.png'
     },
     {
-        id: 2,
+        id: 3,
         date: "Graduation Expected May 2026",
         company: "Carleton University",
         title: "Bachelor of Computer Science (Major in Artificial Intelligence/Machine Learning)",
