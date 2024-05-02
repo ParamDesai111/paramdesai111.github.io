@@ -613,7 +613,7 @@ html {
 /* Typing animation */
 @keyframes typing {
   from { width: 0; }
-  to { width: 100%; } /* Adjust this percentage to fit the text width */
+  to { width: 100%; } 
 }
 
 /* Cursor blink animation */
