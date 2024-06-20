@@ -23,17 +23,18 @@ const projectData = [
         live_url: "https://paramdesai.netlify.app/",
     },
     {
-        id: 4,
+        id:4,
+        title:"Movie Recommendation System",
+        tech: "Python, sklearn, pandas, Machine Learning",
+        github_url: "https://github.com/ParamDesai111/Movie-Reccomendation-System"
+    },
+    {
+        id: 5,
         title: "Tetris Game Project",
         tech: "HTML CSS JavaScript",
         github_url: "https://github.com/ParamDesai111/Tetris-Game-Project",
         live_url: "https://paramdesai111.github.io/Tetris-Game-Project/",
 
-    },
-    {
-        id: 5,
-        title: "Supplies Database Management App",
-        tech: "MongoDB Node.js Express.js JavaScript HTML CSS",
     },
     {
         id: 6,
