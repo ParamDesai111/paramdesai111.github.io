@@ -25,7 +25,7 @@ const projectData = [
     {
         id:4,
         title:"Movie Recommendation System",
-        tech: "Python, sklearn, pandas, Machine Learning",
+        tech: "Python sklearn pandas Machine Learning",
         github_url: "https://github.com/ParamDesai111/Movie-Reccomendation-System"
     },
     {
