@@ -251,6 +251,7 @@ html {
 /* Style for the title of each project */
 .card-title {
   margin-bottom: 0.5rem;
+  text-align: center;
 }
 
 .card-container {
