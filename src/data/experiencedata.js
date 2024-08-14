@@ -4,7 +4,10 @@ const experienceData = [
         date: "April 2024 - Present",
         company: "Bank of Canada",
         title: "Software Engineering Intern",
-        description: "",
+        description: `• Developed and optimized 15+ data pipelines using Azure Data Factory and Azure Databricks, improving data ingestion efficiency by 60% through Python scripting and SQL queries.
+                    • Implemented Autoloader streaming and batch processes for real-time data ingestion, reducing data latency by 90% and supporting integration for over 1TB of data daily.
+                    • Applied machine learning models using scikit-learn in Databricks for forecasting financial data, improving forecasting accuracy by 30%.
+                    • Utilized Azure Logic Apps and Azure Functions to automate 20+ workflows, streamlining operations and reducing manual data management tasks by 50%.`,
         logo: 'https://coherent-commons.s3.amazonaws.com/organizations/organization/logo/14205103-f71e-4161-b28d-12ff164b7f36.png'
     },
     {
