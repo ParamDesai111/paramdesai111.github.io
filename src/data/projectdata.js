@@ -29,7 +29,7 @@ const projectData = [
     },
     {
         id: 5,
-        title: "Param's Online Clinic (Machine Learning Health Reommendation System",
+        title: "Param's Online Clinic (ML Health Recommendation System",
         tech: "Python Sckit-Learn pandas Jupyter Algorithm: K-Nearest-Neighbours",
         github_url: "https://github.com/ParamDesai111/Health-Recommendation-System"
     },
